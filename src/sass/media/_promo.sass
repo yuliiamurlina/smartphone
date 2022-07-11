@@ -1,0 +1,81 @@
+@media (max-width: 1160px)
+    header
+        .container
+            width: 992px
+        .item
+
+            &__img
+                width: 25px
+                height: 18px
+            &__tel, &__email
+                font-size: 10px
+    .promo
+        .container
+            width: 960px
+
+@media (max-width: 992px)
+    header
+        .container
+            width: 760px
+        .item
+            flex-direction: column
+            &__title
+                margin-top: 5px
+                font-size: 10px
+            &__tel, &__email
+                font-size: 9px
+    .promo
+        min-height: 600px
+        .container
+            width: 750px
+        &__img
+            height: 324px
+            top: 246px
+
+@media (max-width: 768px)
+    header
+        display: none
+    .promo
+        .container
+            width: 570px
+        &__logo
+            width: 100px
+            height: 100%
+        .menu
+            &__item
+                margin-top: 19px
+                margin-left: 34px
+                a
+                    font-size: 10px
+        &__title
+            font-size: 36px
+            margin-top: 100px
+        &__subtitle
+            font-size: 22px
+            width: 354px
+        &__button
+            margin-top: 54px
+
+@media (max-width: 576px)
+    .promo
+        .container
+            width: 310px
+        .menu
+            flex-direction: column
+            margin-top: -40px
+            &__item
+                margin-bottom: -19px
+                text-align: right
+        &__title
+            width: 300px
+            margin-top: 60px
+        &__subtitle
+            width: 310px
+            font-size: 20px
+        &__img
+            height: 228px
+            top: 385px
+            z-index: 1
+        &__button
+            position: relative
+            z-index: 3

@@ -1,0 +1,48 @@
+.promo
+    background: url('../img/promo.jpg') center center / cover no-repeat
+    min-height: 690px
+    padding: 33px 0 65px
+    color: #fff
+    &-wrapper
+        position: relative
+    .header
+        display: flex
+        justify-content: space-between
+    .menu
+        display: flex
+        &__item
+            list-style-type: none
+            margin: 24px 0 0 43px
+            a
+                text-transform: uppercase
+                font-weight: 800
+                font-size: 13px
+                color: #fff
+                text-decoration: none
+            &:hover
+                transform: scale(1.08)
+                transition: 0.6s all
+    &__title
+        margin-top: 130px
+        font-size: 42px
+        font-weight: 800
+        width: 535px
+        line-height: 48px
+    &__subtitle
+        font-size: 24px
+        margin-top: 36px
+        line-height: 35px
+        font-weight: 100
+        width: 452px
+    &__button
+        @include button
+        margin-top: 40px
+        &:focus
+            outline-style: none
+            outline-width: 0px !important
+            outline-color: none !important
+
+    &__img
+        position: absolute
+        top: 88px
+        right: 0
