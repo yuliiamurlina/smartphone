@@ -5,7 +5,53 @@
             width: 992px
 
 @media (max-width: 992px)
+    .benefits
+        .container
+            width: 768px
+        &-wrapper
+            row-gap: 0
+        .block
+            &__text
+                width: 195px
+                font-size: 16px
+        .fourth
+            height: 250px
+            margin-top: 100px
 
 @media (max-width: 768px)
+    .benefits
+        .container
+            width: 576px
+        &-wrapper
+            column-gap: 15px
+        .block
+            &__text
+                width: 150px
+                font-size: 14px
+            &__main
+                font-size: 60px
 
 @media (max-width: 576px)
+    .benefits
+        .container
+            width: 320px
+        &-wrapper
+            display: flex
+            flex-direction: column
+        .block
+            margin-bottom: 20px
+        .first
+            order: 1
+        .fifth
+            order: 2
+        .second
+            order: 3
+        .sixth
+            order: 4
+        .third
+            order: 5
+        .seventh
+            order: 6
+        .fourth
+            order: 0
+            height: unset
