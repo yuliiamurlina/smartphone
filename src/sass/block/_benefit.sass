@@ -8,34 +8,32 @@
         grid-auto-rows: 260px
         gap: 32px
         .block
+            border: #ececec 2px solid
+            overflow: hidden
+            position: relative
+            &__img
+                display: block
+                margin: 0 auto
+                width: 170px
             &__text
                 color: #393939
                 font-size: 18px
                 display: block
-                margin: 170px auto 0
+                margin: 0 auto
                 text-align: center
                 width: 250px
-        .first
-            background: url('../icons/benefits/icon1.png')
-        .second
-            background: url('../icons/benefits/icon2.png')
-        .third
-            background: url('../icons/benefits/icon3.png')
+            &__corner
+                position: absolute
+                right: -35px
+                bottom: -40px
+
         .fourth
             grid-column: 1/4
             font-size: 48px
             text-align: center
             margin-top: 140px
             color: #393939
-        .fifth
-            background: url('../icons/benefits/icon4.png')
-            font-weight: 800
-        .sixth
-            background: url('../icons/benefits/icon5.png')
-            font-weight: 800
-        .seventh
-            background: url('../icons/benefits/icon6.png')
-            font-weight: 800
+
         .arrow
             position: relative
             &__top
