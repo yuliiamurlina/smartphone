@@ -1,0 +1,54 @@
+.benefits
+    min-height: 900px
+    padding: 80px 0
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(2, 260px)
+        grid-auto-rows: 260px
+        gap: 32px
+        .block
+            &__text
+                color: #393939
+                font-size: 18px
+                display: block
+                margin: 170px auto 0
+                text-align: center
+                width: 250px
+        .first
+            background: url('../icons/benefits/icon1.png')
+        .second
+            background: url('../icons/benefits/icon2.png')
+        .third
+            background: url('../icons/benefits/icon3.png')
+        .fourth
+            grid-column: 1/4
+            font-size: 48px
+            text-align: center
+            margin-top: 140px
+            color: #393939
+        .fifth
+            background: url('../icons/benefits/icon4.png')
+            font-weight: 800
+        .sixth
+            background: url('../icons/benefits/icon5.png')
+            font-weight: 800
+        .seventh
+            background: url('../icons/benefits/icon6.png')
+            font-weight: 800
+        .arrow
+            position: relative
+            &__top
+                margin: -45px 0 20px
+            &__bottom
+                margin: 25px 0 50px
+            &__first
+                @include arrow
+                transform: rotate(22deg)
+                right: 50%
+            &__second
+                @include arrow
+                left: 50%
+                margin-right: -7px
+                margin-left: -8px
+                transform: rotate(-22deg)
