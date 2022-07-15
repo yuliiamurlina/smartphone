@@ -1,0 +1,83 @@
+@media (max-width: 1160px)
+    .solutions
+        .container
+            width: 992px
+        .slider
+            .left
+                left: 24px
+            .right
+                right: 24px
+            &__wrapper
+                .active
+                    transform: translateX(20%)
+
+@media (max-width: 992px)
+    .solutions
+        height: 720px
+        padding-bottom: 30px
+        .container
+            width: 768px
+        &__tabs
+            max-width: 750px
+        .slider
+            &__bg
+                width: 700px
+                height: 100%
+            &__wrapper
+                .active
+                    transform: translateX(23%)
+                    margin-top: 26px
+                &_img
+                    width: 522px
+                    height: 323px
+
+@media (max-width: 768px)
+    .solutions
+        height: 656px
+        .container
+            width: 576px
+        &__title
+            width: 570px
+        &__tabs
+            flex-wrap: wrap
+            justify-content: center
+            border: none
+        &__tab
+            margin-left: 25px
+            margin-bottom: 10px
+        .slider
+            &__arrow
+                display: none
+            &__bg
+                width: 565px
+            &__wrapper
+                .active
+                    transform: translateX(19%)
+                    margin-top: 21px
+                    width: 417px
+                    height: 262px
+
+@media (max-width: 576px)
+    .solutions
+        height: 590px
+        .container
+            width: 320px
+        &__title
+            width: 310px
+            font-size: 28px
+        &__tabs
+            padding-bottom: 0
+            height: 150px
+        &__tab
+            margin: 0 15px 0
+            &::after
+                content: none
+        .slider
+            &__bg
+                width: 300px
+            &__wrapper
+                .active
+                    transform: translateX(23%)
+                    margin-top: 11px
+                    width: 221px
+                    height: 138px
