@@ -1,0 +1,60 @@
+.variants
+    height: 508px
+    padding-top: 85px
+    position: relative
+    &__title
+        font-size: 30px
+        line-height: 36px
+        text-align: center
+        display: block
+        width: 380px
+        margin: 0 auto
+        font-weight: 900
+        color: #fff
+    &-wrapper
+        display: flex
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+
+        .block
+            width: 50%
+            position: relative
+            &__img
+                max-width: 100%
+
+            &__title
+                font-size: 30px
+                text-transform: uppercase
+                color: #fff
+                margin-top: -236px
+                margin-left: 434px
+                z-index: 2
+                position: relative
+            &__text
+                font-size: 18px
+                line-height: 26px
+                text-align: right
+                width: 490px
+                color: #fff
+                z-index: 2
+                margin-left: 301px
+                position: relative
+            .rectangle
+                width: 167px
+                height: 171px
+                background-color: $main_color
+                position: absolute
+                opacity: 0.4
+                z-index: 1
+                margin-left: 650px
+                margin-top: -138px
+        .second
+            .block__title
+                margin-left: 80px
+            .block__text
+                margin-left: 83px
+                text-align: left
+            .rectangle
+                margin-left: 55px
