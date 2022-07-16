@@ -1,0 +1,59 @@
+@media (max-width: 1160px)
+    .advantages
+        min-height: 800px
+        .container
+            width: 992px
+        &-wrapper
+            grid-template-columns: repeat(2, 420px)
+            grid-auto-rows: 225px
+            width: 825px
+            margin: 0 auto
+            .block
+                width: 100%
+                &:hover
+                    transform: unset
+                    margin: 0
+                    .block__text
+                        width: 100%
+                &__img
+                    width: 100%
+
+@media (max-width: 992px)
+    .advantages
+        .container
+            width: 768px
+        &-wrapper
+            grid-template-columns: repeat(2, 370px)
+            width: 740px
+
+@media (max-width: 768px)
+    .advantages
+        padding: 40px 0
+        min-height: 600px
+        .container
+            width: 576px
+        &-wrapper
+            grid-template-columns: repeat(2, 270px)
+            grid-auto-rows: 166px
+            width: 547px
+            .block
+                &__text
+                    height: 90px
+                    h3
+                        width: 279px
+                        font-size: 16px
+
+@media (max-width: 576px)
+    .advantages
+        .container
+            width: 320px
+        &__title
+            width: 310px
+            font-size: 28px
+        &-wrapper
+            grid-template-columns: 300px
+            grid-auto-rows: 166px
+            width: 300px
+            row-gap: 10px
+            .block__img
+                height: 166px
