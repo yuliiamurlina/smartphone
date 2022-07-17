@@ -1,46 +1,45 @@
 .variants
-    height: 508px
-    padding-top: 85px
+    height: 582px
     position: relative
     &__title
         font-size: 30px
         line-height: 36px
         text-align: center
-        display: block
         width: 380px
-        margin: 0 auto
+        position: absolute
+        top: 68px
+        left: 50%
+        transform: translateX(-50%)
         font-weight: 900
         color: #fff
+        z-index: 2
+
     &-wrapper
         display: flex
-        position: absolute
-        top: 0
-        left: 0
-        z-index: -1
-
+        width: 100%
+        height: 582px
         .block
             width: 50%
-            position: relative
-            &__img
-                max-width: 100%
 
+            position: relative
+            &__wrapper
+                width: 530px
+                margin-top: 209px
+                z-index: -1
             &__title
+                position: relative
                 font-size: 30px
                 text-transform: uppercase
                 color: #fff
-                margin-top: -236px
-                margin-left: 434px
                 z-index: 2
-                position: relative
+
             &__text
                 font-size: 18px
                 line-height: 26px
-                text-align: right
-                width: 490px
                 color: #fff
-                z-index: 2
-                margin-left: 301px
                 position: relative
+                z-index: 2
+
             .rectangle
                 width: 167px
                 height: 171px
@@ -48,13 +47,31 @@
                 position: absolute
                 opacity: 0.4
                 z-index: 1
-                margin-left: 650px
-                margin-top: -138px
-        .second
+                top: 199px
+
+        .first
+            background: url('../img/variant1.jpg') center center / cover no-repeat
+            .block__wrapper
+                width: unset
+                .wrapper__first
+                    margin-left: 716px
+                    right: 75px
+                    position: absolute
+
+                    width: 510px
             .block__title
-                margin-left: 80px
+                text-align: right
             .block__text
-                margin-left: 83px
+                text-align: right
+            .rectangle
+                right: 4%
+        .second
+            background: url('../img/variant2.jpg') center center / cover no-repeat
+            .block__wrapper
+                margin-left: 9%
+            .block__title
+                text-align: left
+            .block__text
                 text-align: left
             .rectangle
-                margin-left: 55px
+                left: 6%
